@@ -1,0 +1,114 @@
+/* See reset.css for reset */
+
+
+/* I just modified Lab02.html, just open that file */
+
+
+/* Font */
+
+body {
+    padding-left: 5%;
+    padding-right: 5%;
+    background: #E8EAF6;
+    min-width: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1,
+h3,
+nav,
+footer {
+    font-family: sans-serif, serif;
+}
+
+
+/* Colors */
+
+#title,
+footer {
+    background: #1A237E;
+    color: white;
+}
+
+a {
+    color: #00B0FF;
+}
+
+section#Description a {
+    font-weight: bold;
+}
+
+nav {
+    background: #3F51B5;
+}
+
+header,
+h3 {
+    background: #7986CB;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1em;
+    font-size: 1em;
+}
+
+section#Description h3 {
+    display: none;
+}
+
+span.user {
+    color: #C5CAE9;
+    font-style: italic;
+}
+
+date {
+    color: #F5A2C1
+}
+
+figcaption {
+    color: #7990a3;
+    font-style: italic;
+    background: #C5CAE9;
+}
+
+nav a:hover {
+    color: white;
+    background: #F50057;
+    padding: 0.3em;
+}
+
+
+/* Other things */
+
+#title {
+    padding: 1em;
+}
+
+#title h1 {
+    font-size: 1.5em;
+}
+
+#title h4 {
+    font-style: italic;
+}
+
+nav,
+nav a {
+    padding: 0.3em;
+}
+
+div#main {
+    background: white;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#author {
+    display: none;
+}
+
+#pic {
+    height: 100%;
+    width: 100%;
+}

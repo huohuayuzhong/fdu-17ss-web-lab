@@ -1,76 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="utf-8">
     <title>Share Your Travels</title>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="Lab03.css" />
 </head>
 
 <body>
-    <h1>
-        <img src="./images/logo.png" alt="Logo" height="96" width="96" />Share Your Travels
-    </h1>
+    <div id="title">
+        <h1>
+            <!-- <img src="./images/logo.png" alt="Logo" height="96" width="96" /> -->
+            Share Your Travels
+        </h1>
+        <h4>
+            <i>Let us know where you've been</i>
+        </h4>
+    </div>
 
     <nav>
-        <ul>
-            <li><a href="#">Description</a><br /></li>
-            <li><a href="#">Releated Photos</a><br /></li>
-            <li><a href="#">Reviews</a></li>
-        </ul>
+        <a href="#">Description</a>
+        <a href="#">Releated Photos</a>
+        <a href="#">Reviews</a>
     </nav>
 
-    <article>
-        <header>
-            <h1>New York - Central Park</h1>
-        </header>
-        <section>
-            <h3>Description</h3>
-            <p>
-                Photo by Randy Connooly
-            </p>
-            <p>
-                This photo of Conservatory Pond in <a href="#">Central Park</a> in <a href="#">New York City</a> was taken on Oct 22, 2016 with a Canon EOS 30D camera
-            </p>
-            <a href="./images/large-central-park.jpg">
-                <img src="./images/large-central-park.jpg" alt="Image" height="312" width="500" lowsrc="./images/central-park.jpg" />
-            </a>
-            <figcaption>Conservatory Pond in Central Park</figcaption>
-            <p>
-                Options:
-                <img src="./images/icon_download.png" alt="Download" height="18" width="18" />
-                <img src="./images/icon_mail.png" alt="Mail" height="18" width="18" />
-                <img src="./images/icon_map.png" alt="Map" height="18" width="18" />
-                <img src="./images/icon_up.png" alt="Up" height="18" width="18" />
-                <img src="./images/icon_down.png" alt="Down" height="18" width="18" />
-            </p>
-        </section>
-        <section>
-            <h3>Related Photos</h3>
-            <p>
-                <a href="./images/related-large1.jpg">
-                    <img src="./images/related-square1.jpg" alt="R1" height="150" width="150" />
+    <div id="main">
+        <article>
+            <header>
+                <h1>New York - Central Park</h1>
+            </header>
+            <section id="Description">
+                <h3>Description</h3>
+                <p id="author">
+                    Photo by Randy Connooly
+                </p>
+                <a href="./images/large-central-park.jpg">
+                    <img id="pic" src="./images/large-central-park.jpg" alt="Image" height="312" width="500" lowsrc="./images/central-park.jpg" />
                 </a>
-                <a href="./images/related-large2.jpg">
-                    <img src="./images/related-square2.jpg" alt="R2" height="150" width="150" />
-                </a>
-                <a href="./images/related-large3.jpg">
-                    <img src="./images/related-square3.jpg" alt="R3" height="150" width="150" />
-                </a>
-            </p>
-        </section>
-        <section>
-            <h3>Reviews</h3>
-            <p>
-                <img src="./images/icon_comment.png" alt="Comment" height="18" width="18" />
-                <b>Ricardo on 2016-05-23</b><br />Easy on the HDR buddy.
-            </p>
-            <hr />
-            <p>
-                <img src="./images/icon_comment.png" alt="Comment" height="18" width="18" />
-                <b>Susan on 2016-11-18</b><br />I love Central Park.
-            </p>
-            <hr />
-        </section>
-    </article>
+                <figcaption>Conservatory Pond in Central Park</figcaption>
+                <p>
+                    This photo of Conservatory Pond in <a href="#">Central Park</a> in <a href="#">New York City</a> was taken on Oct 22, 2016 with a Canon EOS 30D camera
+                </p>
+
+                <p>
+                    <img class="icon" src="./images/icon_download.png" alt="Download" height="18" width="18" />
+                    <img class="icon" src="./images/icon_mail.png" alt="Mail" height="18" width="18" />
+                    <img class="icon" src="./images/icon_map.png" alt="Map" height="18" width="18" />
+                    <img class="icon" src="./images/icon_up.png" alt="Up" height="18" width="18" />
+                    <img class="icon" src="./images/icon_down.png" alt="Down" height="18" width="18" />
+                </p>
+            </section>
+            <section id="Related Photos">
+                <h3>Related Photos</h3>
+                <p>
+                    <a href="./images/related-large1.jpg">
+                        <img src="./images/related-square1.jpg" alt="R1" height="150" width="150" />
+                    </a>
+                    <a href="./images/related-large2.jpg">
+                        <img src="./images/related-square2.jpg" alt="R2" height="150" width="150" />
+                    </a>
+                    <a href="./images/related-large3.jpg">
+                        <img src="./images/related-square3.jpg" alt="R3" height="150" width="150" />
+                    </a>
+                </p>
+            </section>
+            <section id="Reviews">
+                <h3>Reviews</h3>
+                <p>
+                    <span class="user">By Ricardo on </span>
+                    <date>2016-05-23</date>
+                    <br />Easy on the HDR buddy.
+                </p>
+                <hr />
+                <p>
+                    <span class="user">By Susan on </span>
+                    <date>2016-11-18</date>
+                    <br />I love Central Park.
+                </p>
+                <hr />
+            </section>
+        </article>
+    </div>
+
 
     <footer>
         <a href="#">Home</a>|<a href="#">Browse</a>|<a href="#">Search</a><br />

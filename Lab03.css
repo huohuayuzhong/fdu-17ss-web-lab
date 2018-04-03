@@ -52,7 +52,7 @@ h3 {
     font-size: 1em;
 }
 
-section#Description h3 {
+header {
     display: none;
 }
 
@@ -69,12 +69,22 @@ figcaption {
     color: #7990a3;
     font-style: italic;
     background: #C5CAE9;
+    margin-top: -0.3em;
+    padding: 0.5em;
+    padding-left: 1em;
 }
 
 nav a:hover {
     color: white;
     background: #F50057;
     padding: 0.3em;
+}
+
+section {
+    border-style: solid;
+    border-color: #C5CAE9;
+    border-width: 1px;
+    margin: 0.5em;
 }
 
 
@@ -99,16 +109,41 @@ nav a {
 
 div#main {
     background: white;
-    padding: 0.5em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin: 0.5em 0;
+    padding: 0.5em 0;
 }
 
 #author {
     display: none;
 }
 
+.options {
+    text-align: right;
+    padding: 0.5em 1em
+}
+
 #pic {
     height: 100%;
     width: 100%;
+}
+
+.content,
+section#Reviews p {
+    padding: 0.5em 1em 0 1em
+}
+
+hr {
+    margin: 0.5em 1em
+}
+
+footer a {
+    padding-top: 1.3em;
+    padding-left: 1em;
+    padding-bottom: 0.3em;
+}
+
+footer em {
+    padding-top: 0.3em;
+    padding-left: 1em;
+    padding-bottom: 1.3em;
 }

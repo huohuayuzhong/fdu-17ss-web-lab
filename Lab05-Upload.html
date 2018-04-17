@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta data -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Share Your Travels</title>
+
+    <!-- BT css -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg navbar-light container">
+        <div class="navebar-header mx-auto">
+            <h1>
+                <!-- <img src="./images/logo.png" alt="Logo" height="96" width="96" /> -->
+                Share Your Travels
+            </h1>
+            <h4>
+                <i>Let us know where you've been</i>
+            </h4>
+        </div>
+        <nav class="navbar">
+            <ul class="nav navbar-nav container">
+                <li class="nav-item col-md-auto">
+                    <a class="nav-link" href="#">Upload</a>
+                </li>
+                <li class="nav-item col-md-auto">
+                    <a class="nav-link" href="Lab05-Gallery.html">Releated Photos</a>
+                </li>
+                <li class="nav-item col-md-auto">
+                    <a class="nav-link" href="#">Reviews</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <form class="card-body" method="POST" action="http://www.randyconnolly.com/tests/process.php">
+                <fieldset class="form-group">
+                    <legend>Photo Details</legend>
+                    <label for="title">Title</label>
+                    <input class="form-control" id="title" type="text" placeholder="Give your photo a desvriptive name" name="title" />
+                    <label for="description">Descrption</label>
+                    <textarea class="form-control" id="description" placeholder="Adding a description will help with search results"></textarea>
+                    <label for="continent">Continent</label>
+                    <select id="continent" class="form-control" name="continent">
+                        <option>choose continent</option>
+                        <option name="Asian">Asian</option>
+                        <option name="North America">North America</option>
+                    </select>
+                    <label for="country">Country</label>
+                    <select class="form-control" name="country" id="country">
+                        <option>choose country</option>
+                        <option name="China">China</option>
+                        <option name="Japan">Japan</option>
+                        <option name="USA">USA</option>
+                        <option name="Canada">Canada</option>
+                    </select>
+                    <label for="city">City</label>
+                    <input class="form-control" id="city" type="text" name="city" />
+                    <div class="box">
+                        <label>Copy Right?</label><br />
+                        <input type="radio" name="Copy Right" value="All Right Conserved" id="r1" />
+                        <label for="r1">All Right Conserved</label>
+                        <input type="radio" name="Copy Right" value="Creative Commons" id="r2" />
+                        <label for="r2">Creative Commons</label>
+                    </div>
+                    <div class="box">
+                        <label>Creative Commons?</label><br />
+                        <input type="checkbox" name="Creative Commons" value="Attributions" id="c1" />
+                        <label for="c1">Attributions</label>
+                        <input type="checkbox" name="Creative Commons" value="Noncommercial" id="c2" />
+                        <label for="c2">Noncommercial</label>
+                        <input type="checkbox" name="Creative Commons" value="No Derivative Works" id="c3" />
+                        <label for="c3">No Derivative Works</label>
+                    </div>
+
+
+                    <label for="accept">I accept the software licence </label>
+                    <input type="checkbox" id="accept" name="accept" value="accepted" />
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <label for="rate">Rate this photo</label>
+                            <input type="number" class="form-control" id="rate" name="rate" min="1" max="5">
+                        </div>
+                        <div class="col-lg-8 ml-auto">
+                            <label for="color">Color Collection</label>
+                            <input type="color" class="form-control" id="color" name="color">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <label for="date">Date Taken</label>
+                            <input type="date" id="date" class="form-control" name="date">
+                        </div>
+                        <div class="col-lg-4 ml-auto">
+                            <label>Time Taken</label>
+                            <input type="time" class="form-control" id="time" name="time">
+                        </div>
+                    </div>
+                    <input class="btn btn-secondary" type="submit" value="Submit" />
+                    <input class="btn btn-secondary" type="reset" value="Clear Form" />
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
